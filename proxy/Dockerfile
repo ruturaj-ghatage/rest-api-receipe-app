@@ -1,4 +1,4 @@
-FROM nginxinc/nginxinc/nginx-unprivileged:1-alpine
+FROM nginx
 LABEL maintainer="ruturajghatage"
 
 COPY ./default.conf.tpl /etc/nginx/default.conf.tpl
