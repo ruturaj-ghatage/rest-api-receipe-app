@@ -13,6 +13,8 @@ ENV PYTHONUNBUFFERED 1
 #Does the self explanatory instructions
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
+COPY ./ports.conf /etc/apache2/ports.conf
+COPY ./apache.conf /etc/apache2/sites-enabled/000-default.conf
 COPY ./scripts /scripts
 COPY ./app /app
 WORKDIR /app
